@@ -1,0 +1,158 @@
+/******************************************************/
+/* Web del tarjetas de red - hoja de estilo de index  */
+/* Autor: Pablo García Muñoz                          */
+/* Version 1.0 - 05/12/2022                           */
+/******************************************************/
+
+/******************** estilo general ******************/
+@font-face {
+    font-family: titulos;
+    src: url('../fonts/KarmaFuture.ttf');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: texto;
+    background-image: url("../images/fondo.png");
+}
+
+#title-nav{
+    color:rgb(255, 255, 255)
+}
+
+#wrapper{
+    background-color: aliceblue;
+    width: 70%;
+    margin: auto;
+}
+
+/*Titulo de la seccion*/
+.titulo-seccion{
+    font-family: titulos;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 0, 255);
+    padding: 10px;
+}
+
+/******************** HERO SECTION    *********************/
+
+#hero{
+    background-image: url("../images/tarjeta\ de\ red.jpg"); 
+    height: 90vh;                                
+    background-repeat: no-repeat;                
+    background-size: cover;                      
+    background-position: center;                 
+
+    font-family: titulos;
+    font-size: 4.5rem;                           
+    text-align: center;
+    padding-top: 20px;
+}
+
+#titulo{
+        border-radius: 20px;
+        width: 50%;
+        padding: 20px;
+        margin-top: 1%;
+        color: rgb(0, 0, 0);
+}
+/******************* Introducción *************************/
+
+.Intro-text{
+    border-left:thick solid purple;
+    margin: 5%;
+    padding-left: 5%;
+    text-indent: 1cm;
+}
+
+/*********************** tipos ****************************/
+
+#tipos{
+    background-color: #cacaca;
+}
+
+#title-expl{
+    margin-left: 40%;
+}
+
+#title-expl2{
+    margin-left: 30%;
+}
+
+#link{
+    margin-top: 10%;
+    margin-left: auto;
+    text-align: center;
+}
+
+/*Grids*/
+.grid2{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+/*Que corra el aire(ver box-sizing arriba)*/
+.texto{
+    text-align: 50%;
+    margin: auto;
+    padding: auto;
+    padding: 10px 10px;
+}
+/*Selector combinado(img dentro de .col2)*/
+.col2 img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+/*********************** Footer ****************************/
+.footer{
+    background-image: url("../images/footer.png");
+    height: 40vh;
+    background-position: center;
+    text-align: center;
+    
+}
+
+#enlaces{
+    text-align: left;
+    width: 25%;
+    font-size: 1.5rem;
+    padding: 5%;
+}
+
+#text-footer{
+    margin-top: -15%;
+}
+
+/******************* Media Queries *************************/
+
+
+@media only screen and (width<=900px){
+    #wrapper{
+        width: 100%;
+        font-size: 2,5rem;
+    }
+    
+    .grid2{
+        grid-template-columns: 100%;
+    }
+
+    .grid3{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (width<=800px){
+    #titulo{
+        width: 80%;
+    }
+    .grid3{
+        grid-template-columns: 100%;
+    }
+}
