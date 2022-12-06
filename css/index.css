@@ -78,11 +78,11 @@ body{
 }
 
 #title-expl{
-    margin-left: 40%;
+    text-align: center;
 }
 
 #title-expl2{
-    margin-left: 30%;
+    text-align: center;
 }
 
 #link{
@@ -128,6 +128,16 @@ body{
 
 #text-footer{
     margin-top: -15%;
+    width: 25%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+#bibliografia{
+    width: 25%;
+    float: right;
+    margin-top: -35px;
+    margin-right: 25%;
 }
 
 /******************* Media Queries *************************/
@@ -143,16 +153,24 @@ body{
         grid-template-columns: 100%;
     }
 
-    .grid3{
-        grid-template-columns: 50% 50%;
+    .footer{
+        background-position: 70%;
     }
+
+    #enlaces{
+        font-size: 1rem;
+    }
+
+    #text-footer{
+        text-align: center;
+        margin-right: auto;
+        
+    }
+
 }
 
 @media only screen and (width<=800px){
     #titulo{
         width: 80%;
-    }
-    .grid3{
-        grid-template-columns: 100%;
     }
 }
